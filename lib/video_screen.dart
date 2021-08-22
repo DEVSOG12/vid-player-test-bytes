@@ -50,7 +50,7 @@ class _MovieTheaterBodyState extends State<MovieTheaterBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return Container(
       child: FutureBuilder(
         future: _futureController,
         builder: (context, snapshot) {

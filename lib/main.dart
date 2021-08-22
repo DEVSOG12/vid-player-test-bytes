@@ -35,7 +35,9 @@ class _HomeState extends State<Home> {
         .get(Uri.parse(
             "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"))
         .then((value) {
-      bytes = base64Encode(value.bodyBytes);
+      setState(() {
+        bytes = base64Encode(value.bodyBytes);
+      });
     });
   }
 
